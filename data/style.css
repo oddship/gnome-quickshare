@@ -1,0 +1,14 @@
+/* Keep Adwaita's native colours, focus rings, contrast and theme behavior. */
+.page-title { font-size: 24px; font-weight: 700; }
+.section-heading { font-weight: 700; font-size: 15px; }
+.drop-area { border: 2px dashed alpha(@window_fg_color, 0.25); border-radius: 16px; padding: 18px; }
+.high-contrast .drop-area { border-color: alpha(@window_fg_color, 0.6); }
+.drop-area:drop(active) { border-color: @accent_color; background: alpha(@accent_bg_color, 0.08); }
+.device-avatar { background: alpha(@accent_bg_color, 0.12); color: @accent_color; padding: 12px; border-radius: 50%; }
+.pin { font-size: 36px; font-weight: 800; letter-spacing: 8px; font-feature-settings: 'tnum'; }
+.transfer-progress { margin: 0 16px 12px; }
+
+/* Keep task metadata legible instead of stacking dim-label opacities. */
+.subtitle { color: alpha(@window_fg_color, 0.85); opacity: 1; }
+
+.compact-drop { padding: 12px; }

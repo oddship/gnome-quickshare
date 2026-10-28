@@ -1,0 +1,56 @@
+name: Flatpak development bundle
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - Cargo.toml
+      - Cargo.lock
+      - src/**
+      - vendor/**
+      - tests/**
+      - data/**
+      - po/**
+      - scripts/flatpak/**
+      - .github/workflows/flatpak.yml
+  pull_request:
+    paths:
+      - Cargo.toml
+      - Cargo.lock
+      - src/**
+      - vendor/**
+      - tests/**
+      - data/**
+      - po/**
+      - scripts/flatpak/**
+      - .github/workflows/flatpak.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: flatpak-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  flatpak:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Flatpak build tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y flatpak flatpak-builder appstream
+          flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+          flatpak install --user --noninteractive flathub org.gnome.Sdk//50 org.freedesktop.Sdk.Extension.rust-stable//25.08
+      - name: Build bundle and run offline SDK tests
+        run: scripts/flatpak/build.sh "$RUNNER_TEMP/quickshare-flatpak"
+      - name: Upload unsigned development bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: gnome-quickshare-flatpak-x86_64
+          path: ${{ runner.temp }}/quickshare-flatpak/*.flatpak
+          if-no-files-found: error
+          retention-days: 14

@@ -1,0 +1,13 @@
+[Desktop Entry]
+Name=Quickshare
+GenericName=Nearby File Sharing
+Comment=Share files, links, and text with nearby devices
+Exec=gnome-quickshare %F
+Icon=io.github.oddship.GnomeQuickshare
+Terminal=false
+Type=Application
+Categories=GNOME;GTK;Network;FileTransfer;
+Keywords=Quick Share;Nearby Share;Android;Send;Receive;
+StartupNotify=true
+DBusActivatable=true
+MimeType=application/octet-stream;

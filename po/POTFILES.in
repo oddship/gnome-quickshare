@@ -1,0 +1,8 @@
+src/main.rs
+src/window.rs
+src/window/preferences.rs
+src/window/transfers.rs
+src/window/wifi.rs
+src/model.rs
+src/backend.rs
+src/tray.rs

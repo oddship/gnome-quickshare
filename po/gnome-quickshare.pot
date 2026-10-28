@@ -1,0 +1,870 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-28 06:52+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+
+#: src/window/transfers.rs:205
+#, rust-format
+msgid " · Code {code}"
+msgstr ""
+
+#: src/window/transfers.rs:226
+msgid "%H:%M"
+msgstr ""
+
+#: src/window/transfers.rs:375
+msgid "%e %b, %H:%M"
+msgstr ""
+
+#: src/model.rs:84
+msgid "A file path is not valid UTF-8."
+msgstr ""
+
+#: src/window/preferences.rs:395
+msgid "A little closer, in three steps."
+msgstr ""
+
+#: src/window.rs:151
+msgid "About Quickshare"
+msgstr ""
+
+#: src/window/transfers.rs:465
+msgid "Accept"
+msgstr ""
+
+#: src/window/transfers.rs:450
+#, rust-format
+msgid "Accept from {device}?"
+msgstr ""
+
+#: src/window.rs:433
+msgid "Activity"
+msgstr ""
+
+#: src/window.rs:747
+msgid "Add Files"
+msgstr ""
+
+#: src/window/preferences.rs:132
+msgid "Automatic Port"
+msgstr ""
+
+#: src/window/preferences.rs:109
+msgid "Background"
+msgstr ""
+
+#: src/window/preferences.rs:335
+#, rust-format
+msgid "Background permission was not granted: {error}"
+msgstr ""
+
+#: data/io.github.oddship.GnomeQuickshare.metainfo.xml:12
+msgid "Built for GNOME with an adaptive libadwaita interface, desktop notifications, file drag-and-drop, and temporary visibility. Both devices need the same local network and Bluetooth enabled."
+msgstr ""
+
+#: src/window/wifi.rs:11
+msgid "Cancel"
+msgstr ""
+
+#: src/window/transfers.rs:61
+msgid "Cancel Transfer"
+msgstr ""
+
+#: src/window/transfers.rs:133
+msgid "Cancelled"
+msgstr ""
+
+#: src/backend.rs:44
+#, rust-format
+msgid "Cannot open receive folder {path}: {error}"
+msgstr ""
+
+#: src/window/preferences.rs:83
+msgid "Changes are saved as you make them."
+msgstr ""
+
+#: src/window/wifi.rs:11
+msgid "Choose Device"
+msgstr ""
+
+#: src/window.rs:222
+msgid "Choose Files…"
+msgstr ""
+
+#: src/window/preferences.rs:253
+msgid "Choose Folder"
+msgstr ""
+
+#: src/window/preferences.rs:100
+msgid "Choose Receive Folder"
+msgstr ""
+
+#: src/window.rs:321
+msgid ""
+"Choose Receive and connect to the same Wi-Fi network.\n"
+"Keep Bluetooth enabled on both devices."
+msgstr ""
+
+#: src/model.rs:52
+msgid "Choose a short, non-empty device name."
+msgstr ""
+
+#: src/model.rs:55
+msgid "Choose an absolute download folder."
+msgstr ""
+
+#: src/model.rs:68
+msgid "Choose at least one file."
+msgstr ""
+
+#: src/window.rs:1079
+msgid "Choose files or write a message first."
+msgstr ""
+
+#: src/window.rs:746
+msgid "Choose files to share"
+msgstr ""
+
+#: src/window.rs:203
+msgid "Choose what to share, then select a device below."
+msgstr ""
+
+#: src/window.rs:244
+msgid "Clear"
+msgstr ""
+
+#: src/window/preferences.rs:157
+msgid "Clear Transfer History"
+msgstr ""
+
+#: src/window.rs:289
+msgid "Clear Wi-Fi Details"
+msgstr ""
+
+#: src/window/preferences.rs:401 src/window/transfers.rs:543
+#: src/window/wifi.rs:238
+msgid "Close"
+msgstr ""
+
+#: src/window.rs:399
+msgid ""
+"Compare the matching code before accepting.\n"
+"Every share needs your approval."
+msgstr ""
+
+#: src/window/transfers.rs:131
+msgid "Complete"
+msgstr ""
+
+#: src/window/preferences.rs:395
+msgid ""
+"Connect both devices to the same Wi-Fi network and turn on Bluetooth.\n"
+"\n"
+"To send: open Quick Share → Receive on your Android device. Choose files or text here, then select the nearby device.\n"
+"\n"
+"To receive: turn on visibility in the Receive tab, share from your other device, and compare the matching code before accepting.\n"
+"\n"
+"Can’t connect? Disable VPNs or guest isolation. Allow UDP 5353 and the TCP port shown in Preferences through your firewall. A static port makes firewall setup easier.\n"
+"\n"
+"Supported: Android Quick Share and compatible LAN implementations. Wi-Fi Direct, Google accounts, contacts-only sharing, and relay transfers are unavailable."
+msgstr ""
+
+#: src/window.rs:578
+msgid "Connect to a local network to share"
+msgstr ""
+
+#: src/window/transfers.rs:135
+msgid "Connecting"
+msgstr ""
+
+#: src/window/preferences.rs:130
+msgid "Connection"
+msgstr ""
+
+#: src/window.rs:190
+msgid "Connection Help"
+msgstr ""
+
+#: src/window/transfers.rs:134
+msgid "Connection lost"
+msgstr ""
+
+#: src/window/preferences.rs:113
+msgid "Continue receiving while the window is closed"
+msgstr ""
+
+#: src/window/transfers.rs:543
+msgid "Copy"
+msgstr ""
+
+#: src/window/wifi.rs:159
+msgid "Copy Network Name"
+msgstr ""
+
+#: src/window/wifi.rs:240
+msgid "Copy Password"
+msgstr ""
+
+#: src/window/transfers.rs:332
+#, rust-format
+msgid "Could not save history: {error}"
+msgstr ""
+
+#: src/window/preferences.rs:56
+#, rust-format
+msgid "Could not show tray icon: {error}"
+msgstr ""
+
+#: src/backend.rs:64
+#, rust-format
+msgid "Could not start Quick Share: {error}"
+msgstr ""
+
+#: src/window/preferences.rs:400
+msgid ""
+"Ctrl+O     Choose files\n"
+"Ctrl+,      Preferences\n"
+"Ctrl+Q     Quit\n"
+"F1             Connection help\n"
+"\n"
+"Use Tab to move between controls and Enter to activate."
+msgstr ""
+
+#: src/window/preferences.rs:151
+msgid "Current TCP Port"
+msgstr ""
+
+#: src/window/transfers.rs:465
+msgid "Decline"
+msgstr ""
+
+#: src/window/transfers.rs:132
+msgid "Declined"
+msgstr ""
+
+#: src/window/preferences.rs:86
+msgid "Device Name"
+msgstr ""
+
+#: src/window.rs:332
+msgid "Direct transfers. No cloud. No account."
+msgstr ""
+
+#: src/backend.rs:74
+#, rust-format
+msgid "Discovery could not start: {error}"
+msgstr ""
+
+#: src/window.rs:894
+msgid "Discovery will restart after the current transfer."
+msgstr ""
+
+#: src/window.rs:213
+msgid "Drop files here"
+msgstr ""
+
+#: src/window.rs:370
+msgid "Edit Device Name"
+msgstr ""
+
+#: src/window.rs:282
+msgid "Edit Wi-Fi Details"
+msgstr ""
+
+#: src/window/wifi.rs:9
+msgid "Enter a network's details, then choose a nearby device. The password is sent only after that device accepts."
+msgstr ""
+
+#: src/window/preferences.rs:224
+msgid "Enter a port between 1024 and 65535."
+msgstr ""
+
+#: src/window/transfers.rs:444
+msgid "Files"
+msgstr ""
+
+#: src/window/transfers.rs:145 src/window/transfers.rs:382
+#, rust-format
+msgid "From {device}"
+msgstr ""
+
+#: src/main.rs:25
+msgid ""
+"GNOME Quickshare\n"
+"\n"
+"Usage: gnome-quickshare [FILES…]\n"
+"\n"
+"  --background   Start without a window\n"
+"  --version      Show version\n"
+"  --help         Show this help\n"
+"\n"
+"Files can also be dropped into the window or selected in Files."
+msgstr ""
+
+#: src/window/preferences.rs:396
+msgid "Got It"
+msgstr ""
+
+#: src/window/wifi.rs:33 src/window/wifi.rs:229
+msgid "Hidden Network"
+msgstr ""
+
+#: src/window.rs:850 src/window.rs:953
+msgid "Hidden. Turn on to receive."
+msgstr ""
+
+#: src/window/wifi.rs:209
+msgid "Hide Password"
+msgstr ""
+
+#: src/tray.rs:28
+msgid "Hide this computer"
+msgstr ""
+
+#: src/window/preferences.rs:156
+msgid "History stores device names, sizes, times, and outcomes. It excludes filenames and shared content."
+msgstr ""
+
+#: src/window.rs:149
+msgid "How to connect"
+msgstr ""
+
+#: src/window/transfers.rs:490
+msgid "Incoming share"
+msgstr ""
+
+#: src/window/transfers.rs:31
+msgid "Incoming transfer"
+msgstr ""
+
+#: src/window/preferences.rs:112
+msgid "Keep Running When Closed"
+msgstr ""
+
+#: src/window.rs:1069
+msgid "Keep messages smaller than 1 MB."
+msgstr ""
+
+#: src/window.rs:150 src/window/preferences.rs:400
+msgid "Keyboard Shortcuts"
+msgstr ""
+
+#: src/window/transfers.rs:220 src/window/transfers.rs:442
+msgid "Link"
+msgstr ""
+
+#: src/window.rs:156
+msgid "Main Menu"
+msgstr ""
+
+#: src/window/transfers.rs:458
+#, rust-format
+msgid "Matching code {code}"
+msgstr ""
+
+#: src/model.rs:18
+msgid "My computer"
+msgstr ""
+
+#: src/window.rs:298
+msgid "Nearby Devices"
+msgstr ""
+
+#: data/io.github.oddship.GnomeQuickshare.desktop:3
+msgid "Nearby File Sharing"
+msgstr ""
+
+#: src/window.rs:1025 src/window.rs:1088 src/window/transfers.rs:142
+#: src/window/transfers.rs:423
+msgid "Nearby device"
+msgstr ""
+
+#: src/window/wifi.rs:153
+msgid "Network"
+msgstr ""
+
+#: src/window/wifi.rs:17
+msgid "Network Name (SSID)"
+msgstr ""
+
+#: src/window/wifi.rs:233
+msgid "No"
+msgstr ""
+
+#: src/window.rs:419
+msgid "No Transfers Yet"
+msgstr ""
+
+#: src/model.rs:174
+msgid "No configuration directory is available."
+msgstr ""
+
+#: src/window/wifi.rs:223
+msgid "No password (open network)"
+msgstr ""
+
+#: data/io.github.oddship.GnomeQuickshare.metainfo.xml:7
+msgid "Oddship"
+msgstr ""
+
+#: src/window/wifi.rs:24 src/window/wifi.rs:174
+msgid "Open"
+msgstr ""
+
+#: src/window/transfers.rs:47
+msgid "Open Folder"
+msgstr ""
+
+#: src/window.rs:317
+msgid "Open Quick Share on your other device"
+msgstr ""
+
+#: src/tray.rs:26
+msgid "Open Quickshare"
+msgstr ""
+
+#: src/window.rs:161 src/window.rs:388 src/window/transfers.rs:51
+msgid "Open Received Files"
+msgstr ""
+
+#: src/window.rs:214
+msgid "Or choose what to share"
+msgstr ""
+
+#: src/window/transfers.rs:33
+msgid "Outgoing transfer"
+msgstr ""
+
+#: src/window/wifi.rs:29 src/window/wifi.rs:184 src/window/wifi.rs:222
+msgid "Password"
+msgstr ""
+
+#: src/window/wifi.rs:252
+msgid "Password copied"
+msgstr ""
+
+#: src/window.rs:147 src/window/preferences.rs:72
+msgid "Preferences"
+msgstr ""
+
+#: src/window/preferences.rs:156
+msgid "Privacy"
+msgstr ""
+
+#: src/window.rs:669
+msgid "Protocol research and implementation"
+msgstr ""
+
+#: src/window.rs:1096
+msgid "Queued · waiting for the current transfer"
+msgstr ""
+
+#: src/window.rs:943
+#, rust-format
+msgid "Quick Share is ready · Port {port}"
+msgstr ""
+
+#: src/window.rs:1046
+msgid "Quick Share is still starting."
+msgstr ""
+
+#: data/io.github.oddship.GnomeQuickshare.desktop:10
+msgid "Quick Share;Nearby Share;Android;Send;Receive;"
+msgstr ""
+
+#: data/io.github.oddship.GnomeQuickshare.desktop:2
+#: data/io.github.oddship.GnomeQuickshare.metainfo.xml:5
+msgid "Quickshare"
+msgstr ""
+
+#: src/window.rs:152 src/tray.rs:29
+msgid "Quit"
+msgstr ""
+
+#: src/window.rs:1026
+msgid "Ready to share"
+msgstr ""
+
+#: src/window.rs:410
+msgid "Receive"
+msgstr ""
+
+#: src/window/preferences.rs:252
+msgid "Receive Files In…"
+msgstr ""
+
+#: src/window/preferences.rs:93
+msgid "Receive Folder"
+msgstr ""
+
+#: src/window.rs:338
+msgid "Receive from Nearby Devices"
+msgstr ""
+
+#: src/window/preferences.rs:326
+msgid "Receive shares while Quickshare is in the background"
+msgstr ""
+
+#: src/window.rs:379
+msgid "Received files"
+msgstr ""
+
+#: src/window/transfers.rs:129
+msgid "Receiving"
+msgstr ""
+
+#: src/window/transfers.rs:276
+msgid "Rejected a transfer with an unsafe filename."
+msgstr ""
+
+#: src/window.rs:812
+msgid "Remove File"
+msgstr ""
+
+#: src/window.rs:1100
+msgid "Remove from Queue"
+msgstr ""
+
+#: src/window/preferences.rs:125
+msgid "Requires a desktop with tray support"
+msgstr ""
+
+#: src/window.rs:148
+msgid "Restart Discovery"
+msgstr ""
+
+#: src/window.rs:976
+msgid "Retry"
+msgstr ""
+
+#: src/window/transfers.rs:524
+msgid "Review received content before using it."
+msgstr ""
+
+#: src/window/wifi.rs:148
+msgid "Review the details before using this network."
+msgstr ""
+
+#: src/window.rs:1009
+msgid "Searching…"
+msgstr ""
+
+#: src/window/wifi.rs:21 src/window/wifi.rs:172
+msgid "Security"
+msgstr ""
+
+#: src/window.rs:270
+msgid "Select a nearby device below to send this message."
+msgstr ""
+
+#: src/window.rs:334
+msgid "Send"
+msgstr ""
+
+#: data/io.github.oddship.GnomeQuickshare.metainfo.xml:11
+msgid "Send files, links, and text directly to nearby Android devices with Quick Share. Receive files and messages with a matching code and your explicit approval."
+msgstr ""
+
+#: src/window.rs:200
+msgid "Send to a Nearby Device"
+msgstr ""
+
+#: src/window/transfers.rs:130
+msgid "Sending"
+msgstr ""
+
+#: src/window.rs:226
+msgid "Share Text…"
+msgstr ""
+
+#: src/window/wifi.rs:8
+msgid "Share Wi-Fi"
+msgstr ""
+
+#: src/window.rs:146
+msgid "Share Wi-Fi…"
+msgstr ""
+
+#: data/io.github.oddship.GnomeQuickshare.metainfo.xml:6
+msgid "Share a little closer"
+msgstr ""
+
+#: src/window.rs:665
+msgid ""
+"Share a little closer.\n"
+"Quick Share for the GNOME desktop."
+msgstr ""
+
+#: data/io.github.oddship.GnomeQuickshare.desktop:4
+msgid "Share files, links, and text with nearby devices"
+msgstr ""
+
+#: src/model.rs:65
+msgid "Share up to 1,024 files at a time."
+msgstr ""
+
+#: src/window/wifi.rs:190 src/window/wifi.rs:211
+msgid "Show Password"
+msgstr ""
+
+#: src/window/preferences.rs:124
+msgid "Show Tray Icon"
+msgstr ""
+
+#: src/window/transfers.rs:523
+msgid "Something for you"
+msgstr ""
+
+#: src/window/preferences.rs:118
+msgid "Start at Login"
+msgstr ""
+
+#: src/window/preferences.rs:119
+msgid "Start in the background with visibility off"
+msgstr ""
+
+#: src/main.rs:44
+msgid "Start without a window"
+msgstr ""
+
+#: src/window.rs:189 src/window.rs:348 src/window.rs:925 src/window.rs:928
+msgid "Starting Quick Share…"
+msgstr ""
+
+#: src/window.rs:305 src/window.rs:1011
+msgid "Starting…"
+msgstr ""
+
+#: src/window/preferences.rs:137
+msgid "TCP Port"
+msgstr ""
+
+#: src/window/transfers.rs:222
+msgid "Text"
+msgstr ""
+
+#: src/window/transfers.rs:443
+msgid "Text message"
+msgstr ""
+
+#: src/window.rs:256
+msgid "Text or Link"
+msgstr ""
+
+#: src/window.rs:361 src/window/preferences.rs:82
+msgid "This Computer"
+msgstr ""
+
+#: src/window.rs:1095 src/window/transfers.rs:147 src/window/transfers.rs:384
+#, rust-format
+msgid "To {device}"
+msgstr ""
+
+#: src/window/transfers.rs:306
+msgid "Transfer complete"
+msgstr ""
+
+#: src/window/preferences.rs:392
+msgid "Transfer history cleared."
+msgstr ""
+
+#: src/window.rs:339
+msgid "Turn on visibility, then share to this computer."
+msgstr ""
+
+#: src/window/wifi.rs:177
+msgid "Unknown"
+msgstr ""
+
+#: src/window/wifi.rs:79
+msgid "Use a network name of 1–32 bytes and a WEP key of 5 or 13 ASCII characters, or 10 or 26 hexadecimal digits."
+msgstr ""
+
+#: src/window/wifi.rs:40 src/window/wifi.rs:80
+msgid "Use a network name of 1–32 bytes and a password of 8–63 bytes (or 64 hexadecimal digits)."
+msgstr ""
+
+#: src/window/wifi.rs:78
+msgid "Use a network name of 1–32 bytes. This network has no password."
+msgstr ""
+
+#: src/model.rs:58
+msgid "Use a port between 1024 and 65535."
+msgstr ""
+
+#: src/window/preferences.rs:130
+msgid "Use the same Wi-Fi network and enable Bluetooth. A fixed TCP port can help with firewall rules; allow mDNS on UDP 5353."
+msgstr ""
+
+#: src/tray.rs:27
+msgid "Visible for 10 minutes"
+msgstr ""
+
+#: src/window.rs:845 src/window.rs:874
+#, rust-format
+msgid "Visible for {count} more minute"
+msgid_plural "Visible for {count} more minutes"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window.rs:347
+msgid "Visible to nearby devices"
+msgstr ""
+
+#: src/window/wifi.rs:25 src/window/wifi.rs:175
+msgid "WEP"
+msgstr ""
+
+#: src/window/wifi.rs:23 src/window/wifi.rs:176
+msgid "WPA/WPA2 Personal"
+msgstr ""
+
+#: src/window/transfers.rs:128
+msgid "Waiting for approval"
+msgstr ""
+
+#: src/window/transfers.rs:221
+msgid "Wi-Fi Details"
+msgstr ""
+
+#: src/window/wifi.rs:147
+#, rust-format
+msgid "Wi-Fi Network from {device}"
+msgstr ""
+
+#: src/window/wifi.rs:106
+msgid "Wi-Fi network"
+msgstr ""
+
+#: src/window/transfers.rs:439
+#, rust-format
+msgid "Wi-Fi network “{ssid}”"
+msgstr ""
+
+#: src/window/wifi.rs:231
+msgid "Yes"
+msgstr ""
+
+#: src/window.rs:416
+msgid "Your Transfers"
+msgstr ""
+
+#: src/window.rs:365
+msgid "Your name on nearby devices"
+msgstr ""
+
+#: src/window.rs:581
+msgid "Your network disconnected. Transfers may be interrupted."
+msgstr ""
+
+#: src/window/transfers.rs:307
+msgid "Your share has arrived."
+msgstr ""
+
+#: src/window.rs:421
+msgid ""
+"Your transfers appear here.\n"
+"File contents and messages stay out of your history."
+msgstr ""
+
+#: src/window/transfers.rs:432
+#, rust-format
+msgid "and {count} more"
+msgid_plural "and {count} more"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window/transfers.rs:461
+msgid "unavailable"
+msgstr ""
+
+#: src/model.rs:191
+#, rust-format
+msgid "{count} file"
+msgid_plural "{count} files"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window/transfers.rs:182
+#, rust-format
+msgid "{count} minute left"
+msgid_plural "{count} minutes left"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window.rs:1015
+#, rust-format
+msgid "{count} nearby device"
+msgid_plural "{count} nearby devices"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window/transfers.rs:176
+#, rust-format
+msgid "{count} second left"
+msgid_plural "{count} seconds left"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/window/transfers.rs:452
+#, rust-format
+msgid ""
+"{description}\n"
+"\n"
+"Accept only if both codes match."
+msgstr ""
+
+#: src/window/transfers.rs:492
+#, rust-format
+msgid "{device} wants to share with you. Open Quickshare to review."
+msgstr ""
+
+#: src/model.rs:77
+#, rust-format
+msgid "{path} is a folder. Choose files to share."
+msgstr ""
+
+#: src/window/transfers.rs:189
+#, rust-format
+msgid "{rate}/s · {eta}"
+msgstr ""
+
+#: src/window/transfers.rs:244
+#, rust-format
+msgid "{state} · From {device} · {size} · {time}"
+msgstr ""
+
+#: src/window/transfers.rs:240
+#, rust-format
+msgid "{state} · From {device} · {time}"
+msgstr ""
+
+#: src/window/transfers.rs:246
+#, rust-format
+msgid "{state} · To {device} · {size} · {time}"
+msgstr ""
+
+#: src/window/transfers.rs:242
+#, rust-format
+msgid "{state} · To {device} · {time}"
+msgstr ""
+
+#: src/window/transfers.rs:195
+#, rust-format
+msgid "{state} · {done} of {total}{code}"
+msgstr ""

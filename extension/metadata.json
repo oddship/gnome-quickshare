@@ -1,0 +1,7 @@
+{
+  "uuid": "gnome-quickshare@oddship.github.io",
+  "name": "Quickshare",
+  "description": "Quick Share visibility and access from the GNOME top bar",
+  "shell-version": ["48", "49", "50"],
+  "version": 1
+}

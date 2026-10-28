@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.oddship.GnomeQuickshare</id>
+  <translation type="gettext">gnome-quickshare</translation>
+  <name>Quickshare</name>
+  <summary>Share a little closer</summary>
+  <developer id="io.github.oddship"><name>Oddship</name></developer>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <description>
+    <p>Send files, links, and text directly to nearby Android devices with Quick Share. Receive files and messages with a matching code and your explicit approval.</p>
+    <p>Built for GNOME with an adaptive libadwaita interface, desktop notifications, file drag-and-drop, and temporary visibility. Both devices need the same local network and Bluetooth enabled.</p>
+  </description>
+  <url type="homepage">https://github.com/oddship/gnome-quickshare</url>
+  <url type="bugtracker">https://github.com/oddship/gnome-quickshare/issues</url>
+  <launchable type="desktop-id">io.github.oddship.GnomeQuickshare.desktop</launchable>
+  <provides><binary>gnome-quickshare</binary></provides>
+  <categories><category>Network</category><category>FileTransfer</category></categories>
+  <content_rating type="oars-1.1"/>
+  <releases><release version="0.1.0" date="2026-10-28" type="development"/></releases>
+</component>

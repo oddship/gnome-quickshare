@@ -1,0 +1,19 @@
+/target
+/result
+/.direnv
+/.envrc
+*.log
+__pycache__/
+*.pyc
+.flatpak-builder/
+
+/po/locale/
+*.mo
+
+# Local agent state and credentials must never enter the source repository.
+/.agents/
+/.codex/
+/.aws/
+/.env
+/.env.*
+/result-*

@@ -1,0 +1,50 @@
+name: Build and verify
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: cachix/install-nix-action@v31
+      - name: Format, lint, and protocol tests
+        run: nix develop --command sh -c 'cargo fmt --all --check && cargo clippy --locked --workspace --all-targets --all-features -- -D warnings && cargo test --locked --workspace --no-default-features'
+      - name: Extract and validate translation catalogs
+        run: nix develop --command sh -c 'scripts/i18n/update.sh && bash po/install.sh /tmp/quickshare-localized'
+      - name: Check Flatpak dependency pins
+        run: python3 scripts/flatpak/check-sources.py
+      - name: Build installed app and GNOME indicator
+        run: |
+          nix build . --out-link result --cores 2 --max-jobs 1 --print-build-logs
+          nix build .#gnome-extension --out-link result-extension --cores 2 --max-jobs 1 --print-build-logs
+      - name: Native interface and incoming transfer
+        run: |
+          nix develop --command cargo build --locked --no-default-features --features test-tools --bin quickshare-probe
+          nix develop --command env QUICKSHARE_SMOKE_PROBE="$PWD/target/debug/quickshare-probe" bash scripts/ui-smoke.sh "$PWD/result/bin/gnome-quickshare" /tmp/quickshare-ui
+      - name: Translated interface and desktop metadata
+        run: nix develop --command bash scripts/i18n/smoke.sh "$PWD/result/bin/gnome-quickshare" /tmp/quickshare-ui/i18n
+      - name: Wi-Fi consent, review and clipboard
+        run: nix develop --command env QUICKSHARE_SMOKE_WIFI=1 QUICKSHARE_SMOKE_PROBE="$PWD/target/debug/quickshare-probe" bash scripts/ui-smoke.sh "$PWD/result/bin/gnome-quickshare" /tmp/quickshare-ui/wifi
+      - name: Create source archive
+        run: python3 scripts/package-source.py /tmp/gnome-quickshare-0.1.0-source.tar.gz
+      - uses: actions/upload-artifact@v4
+        with:
+          name: gnome-quickshare-source
+          path: /tmp/gnome-quickshare-0.1.0-source.tar.gz
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: native-ui-evidence
+          path: /tmp/quickshare-ui
+          if-no-files-found: warn
+          retention-days: 14
